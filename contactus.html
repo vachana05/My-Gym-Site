@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Contact Us</title>
+    <style>
+        body {
+            background-image: url(https://i.pinimg.com/736x/b2/7a/37/b27a37e86779f012d52194f883c2447d.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-container {
+            background: #976e968c;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 30px 25px;
+            border-radius: 12px;
+            box-shadow:0 4px 4px rgba(0, 0, 0, 0.49);
+        }
+        .contact-container h2 {
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px 8px;
+            border: 1px solid #8f8181;
+            border-radius: 6px;
+            font-size: 14px;
+            resize: vertical;
+        }
+        textarea {
+            min-height: 70px;
+        }
+        button {
+            width: 100%;
+            background-color: #24a19c;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        button:hover {
+            background-color: #178985;
+        }
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 14px;
+            color: #444;
+        }
+        .contact-info p {
+            margin: 6px 0;
+        }
+        .button{
+            margin-left: 120px;
+        }
+            .btn{
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            font-size: 120%;
+            background-color: #581279;
+            transition-duration: 0.3s;
+        }
+        .btn:hover{
+            color: azure;
+            background-color: #690658;
+            box-shadow: 0 0 2px 2px rgba(90, 54, 88, 0.649);
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        a:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name*</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required placeholder="you@email.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message*</label>
+                <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p><strong>Address:</strong>FitFusionHub gym, Near M. S. Bidve Engineeing College,Vaswadi,Latur-413531</p>
+            <p><strong>Phone:</strong>123-456-7890</p>
+            <p><strong>Email:</strong>fitfusionhub@gmaol.com</p>
+        </div>
+         <div class="button">
+                <button class="btn"><a href="project1.html">Home Page</a></button>
+            </div>
+    </div>
+</body>
+</html>

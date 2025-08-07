@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gym Courses</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 2rem 1rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  header h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  }
+
+  header p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #dde1e7cc;
+  }
+
+  main {
+    flex-grow: 1;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+
+  .course-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  }
+
+  .course-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .course-content {
+    padding: 1.5rem 1.2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .course-desc {
+    flex-grow: 1;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+  }
+
+  .course-meta {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+
+  /* Responsive for smaller devices */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    main {
+      padding: 1rem;
+      gap: 1.2rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Gym Courses</h1>
+  <p>Explore our specialized courses to reach your fitness goals</p>
+</header>
+<main>
+  <article class="course-card">
+    <img src="https://images.unsplash.com/photo-1554284126-54711eca4c9c?auto=format&fit=crop&w=800&q=80" alt="Yoga" class="course-image" />
+    <div class="course-content">
+      <h2 class="course-title">Yoga & Meditation</h2>
+      <p class="course-desc">Find your inner balance and improve flexibility with our beginner to advanced Yoga sessions, combined with calming meditation techniques.</p>
+      <div class="course-meta">Duration: 1 hour | Level: All</div>
+    </div>
+  </article>
+
+  <article class="course-card">
+    <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80" alt="CrossFit" class="course-image" />
+    <div class="course-content">
+      <h2 class="course-title">CrossFit Training</h2>
+      <p class="course-desc">High-intensity functional training designed to improve strength and endurance with varied workouts every session.</p>
+      <div class="course-meta">Duration: 45 mins | Level: Intermediate to Advanced</div>
+    </div>
+  </article>
+
+  <article class="course-card">
+    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Zumba" class="course-image" />
+    <div class="course-content">
+      <h2 class="course-title">Zumba Dance</h2>
+      <p class="course-desc">An energizing dance workout combining vibrant Latin and international music for a fun cardio burn.</p>
+      <div class="course-meta">Duration: 50 mins | Level: All</div>
+    </div>
+  </article>
+
+  <article class="course-card">
+    <img src="https://images.unsplash.com/photo-1598975597504-33806107e2d4?auto=format&fit=crop&w=800&q=80" alt="Weight Training" class="course-image" />
+    <div class="course-content">
+      <h2 class="course-title">Weight Training</h2>
+      <p class="course-desc">Build muscle and increase strength using free weights and machines with expert guidance for all fitness levels.</p>
+      <div class="course-meta">Duration: 1 hour | Level: All</div>
+    </div>
+  </article>
+
+  <article class="course-card">
+    <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001ab?auto=format&fit=crop&w=800&q=80" alt="HIIT" class="course-image" />
+    <div class="course-content">
+      <h2 class="course-title">HIIT (High-Intensity Interval Training)</h2>
+      <p class="course-desc">Boost your metabolism and burn fat fast with short bursts of intense exercise followed by recovery periods.</p>
+      <div class="course-meta">Duration: 30 mins | Level: Intermediate to Advanced</div>
+    </div>
+  </article>
+
+  <article class="course-card">
+    <img src="https://images.unsplash.com/photo-1594737625785-c1a4e726a094?auto=format&fit=crop&w=800&q=80" alt="Pilates" class="course-image" />
+    <div class="course-content">
+      <h2 class="course-title">Pilates</h2>
+      <p class="course-desc">Enhance core strength, posture, and flexibility with controlled and focused movements suitable for all levels.</p>
+      <div class="course-meta">Duration: 1 hour | Level: All</div>
+    </div>
+  </article>
+</main>
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gym Registration</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 200px;
+    background-image:url("https://i.pinimg.com/736x/09/30/13/093013ff56a4e385ec18f044d7311c4a.jpg") ;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: #fff;
+  }
+  .container {
+    margin-left: 700px;
+    background: #0e1e38;
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 15px;
+  }
+  input,select {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease; 
+  }
+  .gender-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 8px;
+  }
+  .gender-options label {
+    font-weight: 400;
+    /* cursor: pointer; */
+  }
+  input[type="radio"] {
+    margin-right: 6px;
+  }
+  button {
+    margin-top: 30px;
+    background: #4ade80;
+    border: none;
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 17.4px;
+    font-weight: 600;
+    color: #0e1e38;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  button:hover {
+    /* box-shadow:0px 0px 3px 5px #06d652; */
+    /* background: #02501f; */
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Gym Registration</h1>
+  <form action="logindb.php" method="post">
+    <label for="fullName">Full Name </label>
+    <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+
+    <label for="email">Email Address </label>
+    <input type="email" id="email" name="email" placeholder="example@example.com" required />
+
+    <label for="phone">Phone Number </label>
+    <input type="text" id="phone" name="phone" placeholder="+123 456 7890" pattern="^\+?\d{7,15}$" title="Enter a valid phone number" required />
+
+    <label for="age">Age </label>
+    <input type="number" id="age" name="age" min="12" max="100" placeholder="Your age" required />
+
+    <label>Gender </label>
+    <div class="gender-options">
+      <label><input type="radio" name="gender" value="Male" required /> Male</label>
+      <label><input type="radio" name="gender" value="Female" /> Female</label>
+      <label><input type="radio" name="gender" value="Other" /> Other</label>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+</div>
+
+</body>
+</html>
+
